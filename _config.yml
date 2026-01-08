@@ -54,5 +54,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 css:
-- /asset/css/style.css
+- /assets/css/style.css
 baseurl: "/Portfolio"
