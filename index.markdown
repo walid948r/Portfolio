@@ -32,3 +32,4 @@ Je cherche une alternance.
 ## Contact 
 
 - GitHub :  https://github.com/walid948r
+- Linkedin : www.linkedin.com/in/walid-roudi-88427135b
