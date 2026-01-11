@@ -3,27 +3,38 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-
   <header class="header">
-    <div class="container">
-      <div class="top">
-        <div class="logo">Walid Roudi</div>
+    <div class="container top">
+      <a class="brand" href="{{ '/' | relative_url }}">
+<img class="logo" src="{{ '/assets/profile.png' | relative_url }}" alt="logo di portfolio">
+  </a>
 
-        <nav class="nav">
-          <a class="nav-link" href="Portfolio.html">Accueil</a>
-          <a class="nav-link" href="Projects.html">Projets</a>
-          <a class="nav-link" href="Skills.html">Compétences</a>
-          <a class="nav-link" href="Apropos.html">À propos</a>
-          <a class="nav-link" href="Contacts.html">Contact</a>
-        </nav>
-      </div>
+      <nav class="nav">
+        <a class="nav-link" href="{{ '/' | relative_url }}">Accueil</a>
+        <a class="nav-link" href="{{ '/about/' | relative_url }}">À propos</a>
+        <a class="nav-link" href="{{ '/projects/' | relative_url }}">Projets</a>
+        <a class="nav-link" href="{{ '/contact/' | relative_url }}">Contact</a>
+      </nav>
     </div>
   </header>
-  </body>
+
+  <main class="container main">
+    {{ content }}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted">© {{ site.title }} — Walid Roudi</p>
+    </div>
+  </footer>
+</body>
 </html>

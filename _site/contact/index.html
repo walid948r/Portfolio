@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Accueil | Portfolio</title>
-  <meta name="description" content="Page d’accueil — Walid Roudi, étudiant développeur web en recherche d’alternance.">
+  <title>Contact | Portfolio</title>
+  <meta name="description" content="Me contacter — email, GitHub, LinkedIn.">
 <link rel="stylesheet" href="/Portfolio/assets/css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,36 +28,37 @@
   </header>
 
   <main class="container main">
-    <h1 id="walid-roudi">Walid Roudi</h1>
+    <h1 id="contact">Contact</h1>
 
 <div class="section">
-  <div>
-    <p class="hero-kicker">Étudiant à la Web@cadémie by Epitech</p>
-    <h2 class="hero-title">Développeur web junior</h2>
-    <p class="hero-subtitle">
-     Je recherche une alternance en développement web pour mettre en pratique mes compétences et monter en niveau rapidement. Je travaille principalement en HTML/CSS pour créer des interfaces claires et responsive, et j’apprends JavaScript/PHP pour ajouter de l’interactivité et comprendre la logique côté serveur. Je suis sérieux, rigoureux, et j’aime résoudre les problèmes étape par étape.
-    </p>
-  </div>
+  <ul>
+    <li>Email : <a href="mailto:Walidroudi.pro@gmail.com">Walidroudi.pro@gmail.com</a></li>
+    <li>GitHub : https://github.com/walid948r</li>
+    <li>LinkedIn : https://www.linkedin.com/in/walid-roudi-88427135b</li>
+  </ul>
 </div>
 
-<h2 id="mes-compétences">Mes compétences</h2>
-
 <div class="section">
-    <h3>Frond</h3>
-    <p>-HTML, CSS, JavaScript (quelque base).</p>
-  </div>
+  <form class="form" action="#" method="post">
+    <div class="form-row">
+      <label for="name">Nom</label>
+      <input id="name" name="name" type="text" required="" />
+    </div>
 
-<div class="section">
-    <h3>Back</h3>
-    <p>-PHP (quelque bases), SQL (quelque bases)
-</p>
-  </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required="" />
+    </div>
 
-<div class="section">
-    <h3>Outils</h3>
-    <p>Git/GitHub, VS Code, Terminal, Exel, Notion</p>
-  </div>
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required=""></textarea>
+    </div>
 
+    <button class="btn" type="submit">Envoyer</button>
+
+  </form>
+</div>
 
   </main>
 
